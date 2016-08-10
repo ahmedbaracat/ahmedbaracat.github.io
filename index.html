@@ -31,13 +31,24 @@ layout: default
             <div class="appTitle">
               {{ app.name }}
             </div>
+
+            {% if app.description%}
             <div class="appDescription">
               {{ app.description }}
             </div>
+            {% endif %}
+
+            {% if app.achievement%}
             <div class="appAchievement">
               {{ app.achievement}}
             </div>
+            {% endif %}
+
             <div>
+              {% if app.aUrl%}
+              <a href="{{ app.aUrl }}" target="_blank" rel="external nofollow"><img class="aDownloadBadge" src="assets/AppleBadge.svg" alt="Get it on the Apple Store"  /></a>
+              {% endif %}
+
               {% if app.pUrl%}
               <a href="{{ app.pUrl }}" target="_blank" rel="external nofollow"><img class="pDownloadBadge" src="assets/AndroidBadge.png" alt="Get it on Google Play"  /></a>
               {% endif %}
