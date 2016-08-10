@@ -271,12 +271,12 @@ ul.apps {
   .appLeftColumn {
     /*background-color: #FC3F1D;*/
     float: left;
-    width: 20%;
+    width: 15%;
   }
   .appRightColumn {
     /*background-color: #4AB29E;*/
     float: right;
-    width: 80%;
+    width: 85%;
   }
   .appIcon {
     box-sizing: border-box;
@@ -313,11 +313,11 @@ ul.apps {
   .appAchievement {
     font-style: italic;
   }
-  .appDownloadBadge {
-    width: 35%;
+  .wDownloadBadge, .pDownloadBadge{
+    width: 30%;
     z-index: -2;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
     margin: 1em;
+    vertical-align:middle;
   }
 }
 
