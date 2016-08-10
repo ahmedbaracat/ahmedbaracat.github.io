@@ -53,7 +53,9 @@ layout: default
               <a href="{{ app.pUrl }}" target="_blank" rel="external nofollow"><img class="pDownloadBadge" src="assets/AndroidBadge.png" alt="Get it on Google Play"  /></a>
               {% endif %}
 
-              {% if app.wUrl%}
+              {% if app.notInWStore%}
+              <img class="wDownloadBadge inactive" src="assets/W10Badge.png" alt="Get it on Windows 10" />
+              {% elsif app.wUrl%}
               <a href="{{ app.wUrl }}" target="_blank" rel="external nofollow"><img class="wDownloadBadge" src="assets/W10Badge.png" alt="Get it on Windows 10" /></a>
               {% endif %}
             </div>

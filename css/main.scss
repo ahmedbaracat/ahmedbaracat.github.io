@@ -319,6 +319,10 @@ ul.apps {
     margin: 1em;
     vertical-align:middle;
   }
+
+  .inactive {
+    opacity: 0.45;
+  }
 }
 
 a.twitter-username:before {

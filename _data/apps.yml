@@ -38,12 +38,14 @@
 
 - name: Flipit & Guesit
   wUrl: https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4
+  notInWStore: true
   icon: assets/FlipitGuesit.png
   description: hi
   achievement: lol
 
 - name: Dodger
   wUrl: https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1
+  notInWStore: true
   icon: assets/Dodger.png
   description: hi
   achievement: lol
