@@ -5,147 +5,173 @@ layout: default
 <!--
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<ul class="post-list">
+{% for post in site.posts %}
+<li>
+<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<h2>
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+</h2>
+</li>
+{% endfor %}
+</ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
 -->
 
 
 <body>
-	<header>
-		<h1>Ahmed Baracat</h1>
-	</header>
-	<section class="home">
-		<h2>
-			Hello
-		</h2>
+  <header>
+    <h1>Ahmed Baracat</h1>
+  </header>
+  <section class="home">
+    <h2>
+      Hello
+    </h2>
 
-		<p>
-			I am a software engineer with great interest for design and cognitive psychology. Since 2011, I have published 10+ apps/games for Windows Phone, Android & iOS featured by Microsoft in 150+ countries.
-		</p>
+    <p>
+      I am a software engineer with great interest for design and cognitive psychology. Since 2011, I have published 10+ apps/games for Windows Phone, Android & iOS featured by Microsoft in 150+ countries.
+    </p>
 
-		<h2>
-			Apps & Games
-		</h2>
+    <h2>
+      Apps & Games
+    </h2>
 
-		<ul class="apps">
+    <ul class="apps">
+      {% for app in site.data.apps %}
+      <li>
+        <div class="appContainer">
+          <div class="appLeftColumn">
+            <img class="appIcon" src="{{ app.icon }}" alt="{{ app.name }}">
+          </div>
 
-			<li>
-				<a href="https://www.microsoft.com/en-US/store/apps/Inchy/9NBLGGGZNLCS" rel="external nofollow" title="Inchy">
-					<div id="wrapper">
-						<div id="leftcolumn">
-							<img src="assets/Inchy.jpeg" alt="Inchy">
-						</div>
-						<div id="rightcolumn">
-							Inchy
-						</div>
-					</div>
-				</a>
-			</li>
-			<li>
-				<div class="appContainer">
-					<div class="appLeftColumn">
-						<img class="appIcon" src="assets/FolderUploadBeta.png" alt="Folder Upload Beta">
-					</div>
+          <div class="appRightColumn">
+            <div class="appTitle">
+              {{ app.name }}
+            </div>
+            <div class="appDescription">
+              {{ app.description }}
+            </div>
+            <div class="appAchievement">
+              {{ app.achievement}}
+            </div>
+            <div>
+              <a href="{{ app.url }}"><img class="appDownloadBadge" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+            </div>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
 
-					<div class="appRightColumn">
-						<div class="appTitle">
-							Folder Upload Beta
-						</div>
-						<div class="appDescription">
-							Upload and backup entire folders like screenshots and whatsapp folders to OneDrive.
-						</div>
-						<div class="appAchievement">
-							❝ I thought screenshots backed up automatically with OneDrive, but I was wrong and now realizing how many screenshots I lost before my last reset. But I am glad to have found this app. Thanks for your support! ❞
-</div>
-						<div>
-							<a href="https://www.microsoft.com/store/apps/9wzdncrd2vch?ocid=badge"><img class="appDownloadBadge" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-us/store/games/the-impossible-path/9nblggh0c15h" rel="external nofollow" title="The Impossible Path">
-					<img src="assets/TheImpossiblePath.png" alt="The Impossible Path">
-					<span>The Impossible Path
-						<!--  <technology>Windows Phone XAML</technology> -->
-					</span>
+    <ul class="apps">
 
-				</a>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-US/store/apps/DesignTile/9WZDNCRDNJ0J" rel="external nofollow" title="DesignTile">
-					<img src="assets/DesignTile.png" alt="DesignTile">
-					<span>DesignTile
-						<!--  <technology>Windows Phone XAML</technology> -->
-					</span>
+      <li>
+        <a href="https://www.microsoft.com/en-US/store/apps/Inchy/9NBLGGGZNLCS" rel="external nofollow" title="Inchy">
+          <div id="wrapper">
+            <div id="leftcolumn">
+              <img src="assets/Inchy.jpeg" alt="Inchy">
+            </div>
+            <div id="rightcolumn">
+              Inchy
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <div class="appContainer">
+          <div class="appLeftColumn">
+            <img class="appIcon" src="assets/FolderUploadBeta.png" alt="Folder Upload Beta">
+          </div>
 
-				</a>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-us/store/games/spookies/9wzdncrcwcb6" rel="external nofollow" title="Spookies">
-					<img src="assets/Spookies.png" alt="Spookies">
-					<span>Spookies
-						<!--  <technology>Unity 3D</technology> -->
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4" rel="external nofollow" title="Flipit & Guesit">
-					<img src="assets/FlipitGuesit.png" alt="Flipit & Guesit">
-					<span>Flipit & Guesit
-						<!--  <technology>Windows Phone XAML</technology> -->
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1" rel="external nofollow" title="Dodger">
-					<img src="assets/Dodger.png" alt="Dodger">
-					<span>Dodger
-						<!--    <technology>XNA</technology> -->
-					</span>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.microsoft.com/en-us/store/apps/fifty-five/9nblggh0gq8k" rel="external nofollow" title="Fifty Five">
-					<img src="assets/FiftyFive.png" alt="Fifty Five">
-					<span>Fifty Five
-						<!--  <technology>XNA</technology> -->
-					</span>
-				</a>
-			</li>
-		</ul>
+          <div class="appRightColumn">
+            <div class="appTitle">
+              Folder Upload Beta
+            </div>
+            <div class="appDescription">
+              Upload and backup entire folders like screenshots and whatsapp folders to OneDrive.
+            </div>
+            <div class="appAchievement">
+              ❝ I thought screenshots backed up automatically with OneDrive, but I was wrong and now realizing how many screenshots I lost before my last reset. But I am glad to have found this app. Thanks for your support! ❞
+            </div>
+            <div>
+              <a href="https://www.microsoft.com/store/apps/9wzdncrd2vch?ocid=badge"><img class="appDownloadBadge" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/games/the-impossible-path/9nblggh0c15h" rel="external nofollow" title="The Impossible Path">
+          <img src="assets/TheImpossiblePath.png" alt="The Impossible Path">
+          <span>The Impossible Path
+            <!--  <technology>Windows Phone XAML</technology> -->
+          </span>
 
-		<h2>Experiments</h2>
-		<p>
-			Write about Magmul...
-		</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-US/store/apps/DesignTile/9WZDNCRDNJ0J" rel="external nofollow" title="DesignTile">
+          <img src="assets/DesignTile.png" alt="DesignTile">
+          <span>DesignTile
+            <!--  <technology>Windows Phone XAML</technology> -->
+          </span>
 
-		<h2>Books</h2>
-		<div class="pinterest">
-			<a  data-pin-do="embedBoard" href="https://www.pinterest.com/ahmedbaracat/what-ive-read/"data-pin-scale-width="100" data-pin-scale-height="200" data-pin-board-height="600">        Follow ahmed's board What I've Read on Pinterest.</a>
-			<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-		</div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/games/spookies/9wzdncrcwcb6" rel="external nofollow" title="Spookies">
+          <img src="assets/Spookies.png" alt="Spookies">
+          <span>Spookies
+            <!--  <technology>Unity 3D</technology> -->
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4" rel="external nofollow" title="Flipit & Guesit">
+          <img src="assets/FlipitGuesit.png" alt="Flipit & Guesit">
+          <span>Flipit & Guesit
+            <!--  <technology>Windows Phone XAML</technology> -->
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1" rel="external nofollow" title="Dodger">
+          <img src="assets/Dodger.png" alt="Dodger">
+          <span>Dodger
+            <!--    <technology>XNA</technology> -->
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/store/apps/fifty-five/9nblggh0gq8k" rel="external nofollow" title="Fifty Five">
+          <img src="assets/FiftyFive.png" alt="Fifty Five">
+          <span>Fifty Five
+            <!--  <technology>XNA</technology> -->
+          </span>
+        </a>
+      </li>
+    </ul>
 
-		<p style="text-align:center;margin:2em 0 -1em"><a href="https://twitter.com/Baracat_WP7" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Baracat_WP7</a></p>
+    <h2>Experiments</h2>
+    <p>
+      Write about Magmul...
+    </p>
 
-	</section>
-	<footer>
-		<p>© 2016 <a href="/" rel="home">Ahmed Baracat</a></p>
-	</footer>
+    <h2>Books</h2>
+    <div class="pinterest">
+      <a  data-pin-do="embedBoard" href="https://www.pinterest.com/ahmedbaracat/what-ive-read/"data-pin-scale-width="100" data-pin-scale-height="200" data-pin-board-height="600">        Follow ahmed's board What I've Read on Pinterest.</a>
+      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </div>
+
+    <p style="text-align:center;margin:2em 0 -1em"><a href="https://twitter.com/Baracat_WP7" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Baracat_WP7</a></p>
+
+  </section>
+  <footer>
+    <p>© 2016 <a href="/" rel="home">Ahmed Baracat</a></p>
+  </footer>
 </body>
 </html>
