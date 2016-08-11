@@ -2,10 +2,23 @@
 layout: null
 ---
 <link rel="stylesheet" type="text/css" href="css/main.css">
+
 <body>
   <header>
     <h1>Ahmed Baracat</h1>
-    resume github stackoverflow angellist linkedin
+    <div class="sections">
+      <a href="">Resume</a>
+      <a href="#apps">Apps & Games</a>
+      <a href="#reading">Reading</a>
+    </div>
+
+    <div class="sections">
+      <a href="">Github</a>
+      <a href="">stackoverflow</a>
+      <a href="">AngelList</a>
+      <a href="">LinkedIn</a>
+    </div>
+
   </header>
   <section class="home">
     <h2>
@@ -16,7 +29,7 @@ layout: null
       I am a software engineer with great interest for design and cognitive psychology. I have published 10+ apps/games for Windows Phone, Android & iOS featured by Microsoft in 150+ countries.
     </p>
 
-    <h2>
+    <h2 id="apps">
       Apps & Games
     </h2>
 
@@ -70,7 +83,9 @@ layout: null
         Write about Magmul...
       </p>
 
-      <h2>Books</h2>
+      <h2 id="reading">
+        Reading
+      </h2>
       <div class="pinterest">
         <a  data-pin-do="embedBoard" href="https://www.pinterest.com/ahmedbaracat/what-ive-read/"data-pin-scale-width="100" data-pin-scale-height="200" data-pin-board-height="600">        Follow ahmed's board What I've Read on Pinterest.</a>
         <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
@@ -84,3 +99,31 @@ layout: null
     </footer>
   </body>
   </html>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
