@@ -2,14 +2,31 @@
   year: 2015 - 2016
   icon: assets/Qebla.png
   description:
-  achievement:
+  achievements:
   aUrl: https://itunes.apple.com/us/app/qebla/id1064161301?mt=8
+
+- name: Entaleq
+  year: 2015 - 2016
+  notInAStore: true
+  icon: assets/Entaleq.png
+  description: iOS app enabling persons with different disabilities to navigate and locate accessible places across Egypt.
+  achievements:
+  aUrl: https://itunes.apple.com/us/app/qebla/id1064161301?mt=8
+
+- name: Helm Internal System
+  year: 2015
+  icon: assets/Helm.png
+  description: An Android and desktop apps with a cloud backend to digitize their pen and paper system.
+  achievements:
+    - text: ● Impacted the assessment team (5 members) by saving 20 days of labor per month
+    - text: ● Automated and decreased the assessment report generation process from 2 days to 1 minute (99% decrease)
 
 - name: Inchy
   year: 2015
   icon: assets/Inchy.jpeg
   description:
-  achievement:
+  achievements:
+    - text: Developed and published in 2 days.
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Inchy
   wUrl: https://www.microsoft.com/en-US/store/apps/Inchy/9NBLGGGZNLCS
 
@@ -17,15 +34,14 @@
   year: 2015
   icon: assets/FolderUploadBeta.png
   description: hi
-  achievement: asdfasdf asdfasdf
-                asdf
+  achievement:
   wUrl: https://www.microsoft.com/store/apps/9wzdncrd2vch?ocid=badge
 
 - name: DesignTile
   year: 2014
   icon: assets/DesignTile.png
   description:
-  achievement:
+  achievements:
   wUrl: https://www.microsoft.com/en-US/store/apps/DesignTile/9WZDNCRDNJ0J
 
 - name: Spookies
@@ -40,7 +56,7 @@
   year: 2013 - 2015
   icon: assets/TheImpossiblePath.png
   description:
-  achievement:
+  achievements:
   wUrl: https://www.microsoft.com/en-us/store/games/the-impossible-path/9nblggh0c15h
 
 - name: Flipit & Guesit
@@ -48,7 +64,7 @@
   notInWStore: true
   icon: assets/FlipitGuesit.png
   description:
-  achievement:
+  achievements:
   wUrl: https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4
 
 - name: Bubblo World
@@ -56,7 +72,8 @@
   notInWStore: true
   icon: assets/BubbloWorld.jpg
   description: Puzzle game with 55 levels, hints system and cool animations.
-  achievement: Featured by Microsoft in 100+ countries
+  achievements:
+    - text: Featured by Microsoft in 100+ countries
   media:
     - title: Windows Central article review
       url: https://www.microsoft.com/store/apps/9wzdncrcx308
@@ -79,6 +96,7 @@
 - name: Fifty Five
   year: 2011
   icon: assets/FiftyFive.png
-  description:
-  achievement:
+  description: Digital version of the pen & paper game.
+  achievements:
+    - text: My first XNA game :)
   wUrl: https://www.microsoft.com/en-us/store/apps/fifty-five/9nblggh0gq8k

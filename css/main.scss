@@ -202,7 +202,7 @@ body > footer {
 }
 
 ul.apps {
-  font-size: 16px;
+  font-size: 0.75em;
   &::after {
     clear: both;
     content: "";
@@ -321,11 +321,15 @@ ul.apps {
   }
 
 }
-
+.appAchievements {
+  margin: 1em 0 0 1em;
+}
 .appAchievement {
   text-align: left;
   line-height: 1em;
-  margin: 1em 0 0 1em;
+  margin-top: 0.5em;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 .appMedia {

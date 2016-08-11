@@ -67,10 +67,14 @@ layout: null
             </div>
             {% endif %}
 
-            {% if app.achievement%}
+            {% if app.achievements%}
+            <div class="appAchievements">
+            {% for achievement in app.achievements %}
             <div class="appAchievement">
-              {{ app.achievement}}
+              {{ achievement.text}}
             </div>
+            {% endfor %}
+          </div>
             {% endif %}
 
             {% if app.media%}
@@ -82,7 +86,9 @@ layout: null
             {% endif %}
 
             <div class="appDownload">
-              {% if app.aUrl%}
+              {% if app.notInAStore%}
+              <img class="aDownloadBadge inactive" src="assets/AppleBadge.svg" alt="Get it on the Apple Store"/>
+              {% elsif app.aUrl%}
               <a href="{{ app.aUrl }}" target="_blank" rel="external nofollow"><img class="aDownloadBadge" src="assets/AppleBadge.svg" alt="Get it on the Apple Store"  /></a>
               {% endif %}
 
