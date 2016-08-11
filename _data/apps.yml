@@ -55,11 +55,17 @@
   year: 2011 - 2012
   notInWStore: true
   icon: assets/BubbloWorld.jpg
-  description:
-  achievement: Windows Central Review https://www.microsoft.com/store/apps/9wzdncrcx308
-    WP Video Review https://www.youtube.com/watch?v=qqthn1mLU5Y
-    Video Review https://www.youtube.com/watch?v=TJNn0BbAcdg
-    View Review2 https://www.youtube.com/watch?v=c8fcqU5XoTo
+  description: Puzzle game with 55 levels, hints system and cool animations.
+  achievement: Featured by Microsoft in 100+ countries
+  media:
+    - title: Windows Central article review
+      url: https://www.microsoft.com/store/apps/9wzdncrcx308
+    - title: Windows Central video review
+      url: https://www.youtube.com/watch?v=qqthn1mLU5Y
+    - title: BestWP7Games video review
+      url: https://www.youtube.com/watch?v=TJNn0BbAcdg
+    - title: WPXBOX video review
+      url: https://www.youtube.com/watch?v=c8fcqU5XoTo
   wUrl: https://www.microsoft.com/store/apps/9wzdncrcx308
 
 - name: Dodger
