@@ -78,13 +78,13 @@
   achievements:
     - text: Featured by Microsoft in 100+ countries
   media:
-    - title: Windows Central article review
+    - title: Windows Central article
       url: https://www.microsoft.com/store/apps/9wzdncrcx308
-    - title: Windows Central video review
+    - title: Windows Central video
       url: https://www.youtube.com/watch?v=qqthn1mLU5Y
-    - title: BestWP7Games video review
+    - title: BestWP7Games video
       url: https://www.youtube.com/watch?v=TJNn0BbAcdg
-    - title: WPXBOX video review
+    - title: WPXBOX video
       url: https://www.youtube.com/watch?v=c8fcqU5XoTo
   wUrl: https://www.microsoft.com/store/apps/9wzdncrcx308
 
