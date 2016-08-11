@@ -59,6 +59,11 @@ layout: null
               <span>
                 ({{ app.year }})
               </span>
+              {% if app.users%}
+              <span>
+                [{{ app.users }}]
+              </span>
+              {% endif %}
             </div>
 
             {% if app.description%}

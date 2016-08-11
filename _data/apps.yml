@@ -1,7 +1,8 @@
 - name: Qebla
   year: 2015 - 2016
+  users: 2K+ users
   icon: assets/Qebla.png
-  description:
+  description: A Qebla detection app with simple UI and subtle animations.
   achievements:
   aUrl: https://itunes.apple.com/us/app/qebla/id1064161301?mt=8
 
@@ -23,10 +24,11 @@
 
 - name: Inchy
   year: 2015
+  users: 30K+ users and 3.8+ rating
   icon: assets/Inchy.jpeg
-  description:
+  description: A casual arcade game with video game replays.
   achievements:
-    - text: Developed and published in 2 days.
+    - text: Developed and published in 2 days
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Inchy
   wUrl: https://www.microsoft.com/en-US/store/apps/Inchy/9NBLGGGZNLCS
 
@@ -39,6 +41,7 @@
 
 - name: DesignTile
   year: 2014
+  users: 9K+ users and 4.1 rating
   icon: assets/DesignTile.png
   description:
   achievements:

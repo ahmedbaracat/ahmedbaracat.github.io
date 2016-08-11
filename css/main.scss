@@ -134,6 +134,7 @@ h2 {
   font-size: 1em;
   font-weight: 600;
   margin: 1.5em 0 0em;
+  margin-bottom: 0.5em;
 }
 
 .sections{
@@ -209,7 +210,7 @@ ul.apps {
     display: table;
   }
   li {
-    margin: 1.5em 0 0 0;
+    margin: 0 0 3em 0;
     border-radius: 20px;
     width: 100%;
     display: inline-block;
@@ -345,7 +346,7 @@ ul.apps {
   .wDownloadBadge, .pDownloadBadge, .aDownloadBadge{
     width: 25%;
     z-index: -2;
-    margin: 1em;
+    margin: 1em 1em 0 1em;
     vertical-align:middle;
   }
 
