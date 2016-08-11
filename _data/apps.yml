@@ -1,57 +1,58 @@
 - name: Qebla
   aUrl: https://itunes.apple.com/us/app/qebla/id1064161301?mt=8
   icon: assets/Qebla.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Inchy
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Inchy
   wUrl: https://www.microsoft.com/en-US/store/apps/Inchy/9NBLGGGZNLCS
   icon: assets/Inchy.jpeg
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Folder Upload Beta
   wUrl: https://www.microsoft.com/store/apps/9wzdncrd2vch?ocid=badge
   icon: assets/FolderUploadBeta.png
-  description: cool
-  achievement: lol
+  description: hi
+  achievement: asdfasdf asdfasdf
+                asdf
 
 - name: The Impossible Path
   wUrl: https://www.microsoft.com/en-us/store/games/the-impossible-path/9nblggh0c15h
   icon: assets/TheImpossiblePath.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: DesignTile
   wUrl: https://www.microsoft.com/en-US/store/apps/DesignTile/9WZDNCRDNJ0J
   icon: assets/DesignTile.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Spookies
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Spookies
   wUrl: https://www.microsoft.com/en-us/store/games/spookies/9wzdncrcwcb6
   icon: assets/Spookies.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Flipit & Guesit
   wUrl: https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4
   notInWStore: true
   icon: assets/FlipitGuesit.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Dodger
   wUrl: https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1
   notInWStore: true
   icon: assets/Dodger.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
 
 - name: Fifty Five
   wUrl: https://www.microsoft.com/en-us/store/apps/fifty-five/9nblggh0gq8k
   icon: assets/FiftyFive.png
-  description: hi
-  achievement: lol
+  description:
+  achievement:
