@@ -214,8 +214,8 @@ ul.apps {
     width: 100%;
     display: inline-block;
   }
-  a:hover {
-    //border: 0;
+  .appDownload a:hover {
+    border: 0;
   }
   .appContainer {
   /*display: flex;

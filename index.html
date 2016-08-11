@@ -20,9 +20,10 @@ layout: null
       <a href="">
         <i class="fa fa-github-alt fa-fw" aria-hidden="true"></i>
       </a>
-      <a href="">
+    <!--  <a href="">
         <i class="fa fa-stack-overflow fa-fw" aria-hidden="true"></i>
       </a>
+    -->
     </div>
 
     <div class="sections">
@@ -80,7 +81,7 @@ layout: null
             {% endfor %}
             {% endif %}
 
-            <div>
+            <div class="appDownload">
               {% if app.aUrl%}
               <a href="{{ app.aUrl }}" target="_blank" rel="external nofollow"><img class="aDownloadBadge" src="assets/AppleBadge.svg" alt="Get it on the Apple Store"  /></a>
               {% endif %}
