@@ -2,7 +2,7 @@
   year: 2015 - 2016
   users: 2K+ users
   icon: assets/Qebla.png
-  description: A Qebla detection app with simple UI and subtle animations.
+  description: Qebla detection app with simple UI and subtle animations.
   achievements:
   aUrl: https://itunes.apple.com/us/app/qebla/id1064161301?mt=8
 
@@ -17,16 +17,16 @@
 - name: Helm Internal System
   year: 2015
   icon: assets/Helm.png
-  description: An Android and desktop apps with a cloud backend to digitize their pen and paper system.
+  description: Android and desktop apps with a cloud backend to digitize Helm's pen and paper system.
   achievements:
     - text: ● Impacted the assessment team (5 members) by saving 20 days of labor per month
     - text: ● Automated and decreased the assessment report generation process from 2 days to 1 minute (99% decrease)
 
 - name: Inchy
   year: 2015
-  users: 30K+ users and 3.8+ rating
+  users: 60K+ users & 3.8+ rating
   icon: assets/Inchy.jpeg
-  description: A casual arcade game with video game replays.
+  description: Casual arcade game with video game replays.
   achievements:
     - text: Developed and published in 2 days
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Inchy
@@ -34,44 +34,59 @@
 
 - name: Folder Upload Beta
   year: 2015
+  users: 5 rating
   icon: assets/FolderUploadBeta.png
-  description: hi
+  description: Upload and backup entire folders like screenshots and whatsapp folders to OneDrive.
   achievement:
   wUrl: https://www.microsoft.com/store/apps/9wzdncrd2vch?ocid=badge
 
 - name: DesignTile
   year: 2014
-  users: 9K+ users and 4.1 rating
+  users: 9K+ users & 4.1 rating
   icon: assets/DesignTile.png
-  description:
+  description: Display 3 calendar events on the home screen tile instead of being limited to one (default WP calendar app).
   achievements:
   wUrl: https://www.microsoft.com/en-US/store/apps/DesignTile/9WZDNCRDNJ0J
 
 - name: Spookies
   year: 2014
+  users: 30K+ users & 4.2+ rating
   icon: assets/Spookies.png
-  description:
-  achievement:
+  description: Endless side-scroller developed as a reaction to the huge number of Flappy Bird clones.
+  achievements:
+    - text: My first Unity3D game :)
+    - text: Developed and published over 1 weekend
+  media:
+    - title: WinBeta article
+      url: http://www.winbeta.org/news/spookies-windows-phone-flappy-bird-style-endless-runner-game
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Spookies
   wUrl: https://www.microsoft.com/en-us/store/games/spookies/9wzdncrcwcb6
 
 - name: The Impossible Path
   year: 2013 - 2015
+  users: 90K+ users & 4.2 rating
   icon: assets/TheImpossiblePath.png
-  description:
+  description: Test your visual memory and ability to steadily trace a path between two points.
   achievements:
+  media:
+    - title: Windows Central article
+      url: http://www.windowscentral.com/impossible-path-windows-phone-game-review
+    - title: Windows Central video
+      url: https://www.youtube.com/watch?v=IVIL9Rqe_hY
   wUrl: https://www.microsoft.com/en-us/store/games/the-impossible-path/9nblggh0c15h
 
 - name: Flipit & Guesit
   year: 2013
+  users: 15K+ users & 4.2+ rating
   notInWStore: true
   icon: assets/FlipitGuesit.png
-  description:
+  description: Flip the tiles and guess the images.
   achievements:
   wUrl: https://www.microsoft.com/en-us/store/apps/flipit-guesit/9nblggh09ks4
 
 - name: Bubblo World
   year: 2011 - 2012
+  users: 150K+ users & 4.2+ rating
   notInWStore: true
   icon: assets/BubbloWorld.jpg
   description: Puzzle game with 55 levels, hints system and cool animations.
@@ -92,8 +107,9 @@
   year: 2011
   notInWStore: true
   icon: assets/Dodger.png
-  description:
-  achievement:
+  description: Highly addictive missile dodging game where the player tries to perform hard maneuvers in order to make the enemy die by his own hand.
+  achievements:
+    - text: First exposure to REST API for implmenting leaderboards
   wUrl: https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1
 
 - name: Fifty Five
