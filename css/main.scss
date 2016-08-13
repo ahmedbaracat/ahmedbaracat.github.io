@@ -117,7 +117,7 @@ h1 {
 
 @media all and (max-width: 660px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 0em;
   }
 }
 
@@ -234,21 +234,21 @@ ul.apps {
   }
 }
 
-
+/*
 @media all and (max-width: 660px) {
   ul.apps {
     width: 280px;
   }
 }
+*/
 
-
-
+/*
 @media all and (max-width: 660px) {
   ul.apps li {
     width: 50%;
   }
 }
-
+*/
 /*
 ul.apps a {
   display: block;
