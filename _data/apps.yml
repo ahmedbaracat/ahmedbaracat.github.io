@@ -19,8 +19,8 @@
   icon: assets/Helm.png
   description: Android and desktop apps with a cloud backend to digitize Helm's pen and paper system.
   achievements:
-    - text: ● Impacted the assessment team (5 members) by saving 20 days of labor per month
-    - text: ● Automated and decreased the assessment report generation process from 2 days to 1 minute (99% decrease)
+    - text: Impacted the assessment team (5 members) by saving 20 days of labor per month
+    - text: Automated and decreased the assessment report generation process from 2 days to 1 minute (99% decrease)
 
 - name: Inchy
   year: 2015
