@@ -3,44 +3,6 @@
 ---
 @charset "utf-8";
 
-// Our variables
-/*
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-*/
-
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// Import partials from the `minima` theme.
-//@import "minima";
-
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -122,10 +84,8 @@ h1 {
 }
 
 body > header h1 a {
-  /* color: #f6291d;*/
   border: 0;
   &:hover {
-    /* color: #f6291d;*/
     border: 0;
   }
 }
@@ -219,91 +179,31 @@ ul.apps {
     border: 0;
   }
   .appContainer {
-  /*display: flex;
-  display: -webkit-flex;
-*/
   }
   .appRightColumn {
-    /*  display: flex;
-      display: -webkit-flex;
-      -webkit-flex-direction: column;
-      flex-direction:         column;
-      float: left;
-
-    */
   }
 }
 
-/*
-@media all and (max-width: 660px) {
-  ul.apps {
-    width: 280px;
-  }
-}
-*/
-
-/*
-@media all and (max-width: 660px) {
-  ul.apps li {
-    width: 50%;
-  }
-}
-*/
-/*
-ul.apps a {
-  display: block;
-  width: 100px;
-  height: 120px;
-  line-height: 0;
-  margin: 0 auto;
-}
-*/
-/*
-ul.apps a span {
-  display: block;
-  width: 100px;
-  height: 10px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1em;
-  padding: 8px 0 0;
-  color: #888;
-}
-*/
 
 .appLeftColumn {
-  /*  display: flex;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction:         column;
-    float: left;
 
-  */
 }
 
 ul.apps {
   .appLeftColumn {
-    /*background-color: #FC3F1D;*/
     float: left;
     width: 15%;
   }
   .appRightColumn {
-    /*background-color: #4AB29E;*/
     float: right;
     width: 85%;
   }
   .appIcon {
     box-sizing: border-box;
     border-radius: 1em;
-    /*height: 100px;
-    width: 100px;
-    */
     width: 100%;
     z-index: -2;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-
-    /*  float: left;*/
-    /*margin: 0.5em;*/
   }
   .appTitle {
     font-weight: bold;
