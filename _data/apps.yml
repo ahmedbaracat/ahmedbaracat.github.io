@@ -88,7 +88,7 @@
   year: 2011 - 2012
   users: 150K+ users & 4.2+ rating
   notInWStore: true
-  icon: assets/BubbloWorld.jpg
+  icon: assets/BubbloWorld.png
   description: Puzzle game with 55 levels, hints system and cool animations.
   achievements:
     - text: Featured by Microsoft in 100+ countries
