@@ -2,20 +2,20 @@
 layout: null
 ---
 <head>
-<meta charset="utf-8">
-<title>Ahmed Baracat</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="I'm a software engineer with great interest for design and cognitive psychology. I have published 10+ apps/games for Windows Phone, Android & iOS used by 300K+ users and featured by Microsoft in 150+ countries." />
-<meta property="fb:admins" content="900430528">
-<meta property="og:site_name" content="Ahmed Baracat">
-<meta property="og:title" content="Ahmed Baracat">
-<meta property="og:description" content="I'm a software engineer with great interest for design and cognitive psychology. I have published 10+ apps/games for Windows Phone, Android & iOS used by 300K+ users and featured by Microsoft in 150+ countries.">
-<meta property="og:type" content="profile">
-<meta property="og:locale" content="en_US">
-<meta property="og:url" content="http://ahmedbaracat.com">
-<meta property="profile:first_name" content="Ahmed">
-<meta property="profile:last_name" content="Baracat">
-<meta property="profile:gender" content="male">
+  <meta charset="utf-8">
+  <title>Ahmed Baracat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I'm a software engineer with great interest for design and cognitive psychology. I have published 10+ apps/games for Windows Phone, Android & iOS used by 300K+ users and featured by Microsoft in 150+ countries." />
+  <meta property="fb:admins" content="900430528">
+  <meta property="og:site_name" content="Ahmed Baracat">
+  <meta property="og:title" content="Ahmed Baracat">
+  <meta property="og:description" content="I'm a software engineer with great interest for design and cognitive psychology. I have published 10+ apps/games for Windows Phone, Android & iOS used by 300K+ users and featured by Microsoft in 150+ countries.">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="http://ahmedbaracat.com">
+  <meta property="profile:first_name" content="Ahmed">
+  <meta property="profile:last_name" content="Baracat">
+  <meta property="profile:gender" content="male">
 
 </head>
 
@@ -86,12 +86,12 @@ layout: null
 
             {% if app.achievements%}
             <div class="appAchievements">
-            {% for achievement in app.achievements %}
-            <div class="appAchievement">
-              ● {{ achievement.text}}
+              {% for achievement in app.achievements %}
+              <div class="appAchievement">
+                ● {{ achievement.text}}
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
-          </div>
             {% endif %}
 
             {% if app.media%}
@@ -173,4 +173,15 @@ layout: null
       } // End if
     });
   });
+  </script>
+  <script>
+  //Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89873300-1', 'auto');
+  ga('send', 'pageview');
+
   </script>
