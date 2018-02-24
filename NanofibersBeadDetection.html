@@ -6,11 +6,6 @@
 </header>
 <div class="container">
 <h1>Nanofibers Bead Detection</h1>
-<!-- <div id="statusLogger"></div> -->
-<!-- <input id="photoUpload" type="file" accept="image/*"> -->
-<!-- <button id="addphoto" onclick="uploadPhoto()">
-        Upload SEM Photo
-</button> -->
 <div class="input-group p-5">
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="photoUpload">
@@ -38,6 +33,7 @@ var photoKey = null
 
 var photoUploadInput = document.getElementById('photoUpload')
 var photoUploadLabel = document.getElementById('photoUploadLabel')
+var outputPhoto = document.getElementById("outputPhoto")
 
 photoUploadInput.onclick = function () {
   this.value = null;
@@ -53,21 +49,6 @@ photoUploadInput.onchange = function () {
   var file = files[0];
   var fileName = file.name;
   photoUploadLabel.innerHTML = fileName;
-  //
-  // photoKey = (new Date).getTime() + "_" + fileName;
-  //
-  // console.log(photoKey);
-  // s3Input.upload({
-  //   Key: photoKey,
-  //   Body: file,
-  //   ACL: 'public-read'
-  // }, function(err, data) {
-  //   if (err) {
-  //     return alert('There was an error uploading your photo: ', err.message);
-  //   }
-  //   logStatus('Successfully uploaded photo.');
-  //   refreshIntervalId = setInterval(pollResult, 1000);
-  // });
 }
 
 AWS.config.update({
@@ -105,7 +86,8 @@ function pollResult()
         var photo = data.Contents[0];
         var photoKey = photo.Key;
         var photoUrl = href + outputBucketName +  "/" + encodeURIComponent(photoKey)
-        document.getElementById("outputPhoto").src = photoUrl
+        outputPhoto.src = photoUrl
+        outputPhoto.style.display = "inline";
         console.log(photoUrl);
         clearInterval(refreshIntervalId);
       }
@@ -120,7 +102,6 @@ function uploadPhoto() {
   }
   var file = files[0];
   var fileName = file.name;
-  // var albumPhotosKey = encodeURIComponent() + '//';
 
   photoKey = (new Date).getTime() + "_" + fileName;
 
