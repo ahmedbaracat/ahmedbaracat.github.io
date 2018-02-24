@@ -1,0 +1,90 @@
+<html>
+<h1>SEM Bead Detection</h1>
+<div id="statusLogger"></div>
+<input id="photoupload" type="file" accept="image/*">
+<button id="addphoto" onclick="uploadPhoto()">
+        Upload SEM Photo
+</button>
+<div>
+  <img id="outputPhoto" style="width:512px;" src=""/>
+</div>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.202.0.min.js"></script>
+<script>
+
+var inputBucketName = 'baracat-dl-test-bucket';
+var outputBucketName = 'baracat-dl-test-bucket';
+var bucketRegion = 'eu-west-1';
+var IdentityPoolId = 'eu-west-1:abc4629f-24a7-42af-b329-0c34378554b2';
+var statusLogger = document.getElementById('statusLogger')
+var refreshIntervalId = null
+var photoKey = null
+
+AWS.config.update({
+  region: bucketRegion,
+  credentials: new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: IdentityPoolId
+  })
+});
+
+var s3Input = new AWS.S3({
+  apiVersion: '2006-03-01',
+  params: {Bucket: inputBucketName}
+});
+
+// var s3Output = new AWS.S3({
+//   apiVersion: '2006-03-01',
+//   params: {Bucket: outputBucketName}
+// });
+
+function logStatus(status) {
+  statusLogger.innerHTML = status
+}
+
+function pollResult()
+{
+  console.log("polling...");
+
+  s3Input.listObjects({Prefix: photoKey}, function(err, data) {
+    if (err) {
+      return alert('There was an error listing your albums: ' + err.message);
+    } else {
+
+      if(data.Contents.length > 0) {
+        var href = this.request.httpRequest.endpoint.href;
+        var photo = data.Contents[0];
+        var photoKey = photo.Key;
+        var photoUrl = href + outputBucketName +  "/" + encodeURIComponent(photoKey)
+        document.getElementById("outputPhoto").src = photoUrl
+        console.log(photoUrl);
+        clearInterval(refreshIntervalId);
+      }
+    };
+  });
+}
+
+function uploadPhoto() {
+  var files = document.getElementById('photoupload').files;
+  if (!files.length) {
+    return alert('Please choose a file to upload first.');
+  }
+  var file = files[0];
+  var fileName = file.name;
+  // var albumPhotosKey = encodeURIComponent() + '//';
+
+  photoKey = (new Date).getTime() + "_" + fileName;
+
+  console.log(photoKey);
+  s3Input.upload({
+    Key: photoKey,
+    Body: file,
+    ACL: 'public-read'
+  }, function(err, data) {
+    if (err) {
+      return alert('There was an error uploading your photo: ', err.message);
+    }
+    logStatus('Successfully uploaded photo.');
+    refreshIntervalId = setInterval(pollResult, 1000);
+  });
+}
+</script>
+</html>
