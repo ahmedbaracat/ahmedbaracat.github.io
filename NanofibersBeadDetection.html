@@ -1,12 +1,29 @@
 <html>
-<h1>SEM Bead Detection</h1>
-<div id="statusLogger"></div>
-<input id="photoupload" type="file" accept="image/*">
-<button id="addphoto" onclick="uploadPhoto()">
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/nanofibersBeadDetection.css">
+  <link rel="stylesheet" type="text/css" href="customFont/css/customfont.css">
+</header>
+<div class="container">
+<h1>Nanofibers Bead Detection</h1>
+<!-- <div id="statusLogger"></div> -->
+<!-- <input id="photoUpload" type="file" accept="image/*"> -->
+<!-- <button id="addphoto" onclick="uploadPhoto()">
         Upload SEM Photo
-</button>
-<div>
-  <img id="outputPhoto" style="width:512px;" src=""/>
+</button> -->
+<div class="input-group p-5">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="photoUpload">
+    <label id="photoUploadLabel" class="custom-file-label" for="photoUpload">Choose a nanofiber SEM image</label>
+  </div>
+  <div class="input-group-append">
+    <span class="input-group-text" onclick="uploadPhoto()">Upload</span>
+  </div>
+</div>
+
+<div id="outputImageContainer">
+  <img id="outputPhoto" src=""/>
+</div>
 </div>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.202.0.min.js"></script>
 <script>
@@ -18,6 +35,40 @@ var IdentityPoolId = 'eu-west-1:abc4629f-24a7-42af-b329-0c34378554b2';
 var statusLogger = document.getElementById('statusLogger')
 var refreshIntervalId = null
 var photoKey = null
+
+var photoUploadInput = document.getElementById('photoUpload')
+var photoUploadLabel = document.getElementById('photoUploadLabel')
+
+photoUploadInput.onclick = function () {
+  this.value = null;
+  photoUploadLabel.innerHTML = "Choose a nanofiber SEM image";
+}
+
+photoUploadInput.onchange = function () {
+
+  var files = this.files;
+  if (!files.length) {
+    return alert('Please choose a file to upload first.');
+  }
+  var file = files[0];
+  var fileName = file.name;
+  photoUploadLabel.innerHTML = fileName;
+  //
+  // photoKey = (new Date).getTime() + "_" + fileName;
+  //
+  // console.log(photoKey);
+  // s3Input.upload({
+  //   Key: photoKey,
+  //   Body: file,
+  //   ACL: 'public-read'
+  // }, function(err, data) {
+  //   if (err) {
+  //     return alert('There was an error uploading your photo: ', err.message);
+  //   }
+  //   logStatus('Successfully uploaded photo.');
+  //   refreshIntervalId = setInterval(pollResult, 1000);
+  // });
+}
 
 AWS.config.update({
   region: bucketRegion,
@@ -31,20 +82,20 @@ var s3Input = new AWS.S3({
   params: {Bucket: inputBucketName}
 });
 
-// var s3Output = new AWS.S3({
-//   apiVersion: '2006-03-01',
-//   params: {Bucket: outputBucketName}
-// });
+var s3Output = new AWS.S3({
+  apiVersion: '2006-03-01',
+  params: {Bucket: outputBucketName}
+});
 
 function logStatus(status) {
-  statusLogger.innerHTML = status
+  // statusLogger.innerHTML = status
 }
 
 function pollResult()
 {
   console.log("polling...");
 
-  s3Input.listObjects({Prefix: photoKey}, function(err, data) {
+  s3Output.listObjects({Prefix: photoKey}, function(err, data) {
     if (err) {
       return alert('There was an error listing your albums: ' + err.message);
     } else {
@@ -63,7 +114,7 @@ function pollResult()
 }
 
 function uploadPhoto() {
-  var files = document.getElementById('photoupload').files;
+  var files = document.getElementById('photoUpload').files;
   if (!files.length) {
     return alert('Please choose a file to upload first.');
   }
