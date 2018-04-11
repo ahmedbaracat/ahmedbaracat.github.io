@@ -6,6 +6,15 @@
 </header>
 <div class="container">
 <h1>Nanofibers Bead Detection</h1>
+<!-- <div>
+  Add here the steps (rectangles) choose image, upload image, detect beads, get final result
+  Each step would go from choose, choosing, image chosen
+  or upload, uploading, image uploaded
+</div> 
+-->
+<div>
+We may need to have a download button and ability to bulk upload & download.
+</div>
 <div class="input-group p-5">
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="photoUpload">
@@ -28,7 +37,7 @@
 <script>
 
 var inputBucketName = 'baracat-dl-test-bucket';
-var outputBucketName = 'baracat-dl-test-bucket';
+var outputBucketName = 'nanofibers-bead-detection-output';
 var bucketRegion = 'eu-west-1';
 var IdentityPoolId = 'eu-west-1:abc4629f-24a7-42af-b329-0c34378554b2';
 var statusLogger = document.getElementById('statusLogger')
