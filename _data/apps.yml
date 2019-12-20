@@ -34,6 +34,7 @@
 
 - name: Inchy
   year: 2015
+  notInPStore: true
   users: 60K+ users & 3.8+ rating
   icon: assets/Inchy.jpeg
   description: Casual arcade game with video game replays.
@@ -62,6 +63,7 @@
 
 - name: Spookies
   year: 2014
+  notInPStore: true
   users: 30K+ users & 4.2+ rating
   icon: assets/Spookies.png
   description: Endless side-scroller developed as a reaction to the huge number of Flappy Bird clones.

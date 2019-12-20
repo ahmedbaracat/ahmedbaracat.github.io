@@ -126,7 +126,10 @@ layout: null
               <a href="{{ app.aUrl }}" target="_blank" rel="external nofollow"><img class="aDownloadBadge" src="assets/AppleBadge.svg" alt="Get it on the Apple Store"  /></a>
               {% endif %}
 
-              {% if app.pUrl%}
+
+              {% if app.notInPStore%}
+              <img class="pDownloadBadge inactive" src="assets/AndroidBadge.png" alt="Get it on Google Play"  />
+              {% elsif app.pUrl%}
               <a href="{{ app.pUrl }}" target="_blank" rel="external nofollow"><img class="pDownloadBadge" src="assets/AndroidBadge.png" alt="Get it on Google Play"  /></a>
               {% endif %}
 
