@@ -44,7 +44,7 @@
 
 - name: Folder Upload Beta
   year: 2015
-  notInAStore: true
+  notInWStore: true
   users: 5 rating
   icon: assets/FolderUploadBeta.png
   description: Upload and backup entire folders like screenshots and whatsapp folders to OneDrive.
@@ -53,7 +53,7 @@
 
 - name: DesignTile
   year: 2014
-  notInAStore: true
+  notInWStore: true
   users: 9K+ users & 4.1 rating
   icon: assets/DesignTile.png
   description: Display 3 calendar events on the home screen tile instead of being limited to one (default WP calendar app).
@@ -126,7 +126,7 @@
 
 - name: Fifty Five
   year: 2011
-  notInAStore: true
+  notInWStore: true
   icon: assets/FiftyFive.png
   description: Digital version of the pen & paper game.
   achievements:
