@@ -106,7 +106,9 @@
     - text: Featured by Microsoft in 100+ countries
   media:
     - title: Windows Central article
-      url: https://www.microsoft.com/store/apps/9wzdncrcx308
+      url: https://web.archive.org/web/20181228165155/https://www.windowscentral.com/bubblo-world-review/
+    - title: WPXBOX article
+      url: https://web.archive.org/web/20130424042813/https://www.wpxbox.com/bubblo-world-puzzles-wp/
     - title: Windows Central video
       url: https://www.youtube.com/watch?v=qqthn1mLU5Y
     - title: BestWP7Games video
