@@ -1,3 +1,13 @@
+- name: Foodology
+  year: 2020 -
+  icon: assets/Foodology_Logo.png
+  description: Understand what you eat 🍏 🍩 🍣 🌰 🧀
+  aUrl: https://apps.apple.com/us/app/foodology/id1506837160
+  pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Foodology
+  media:
+    - title: Website
+      url: https://www.baracatbros.com/games/foodology/
+
 - name: Bubblo World Preschool
   year: 2019 -
   icon: assets/BubbloWorldPreschool.png
@@ -123,7 +133,7 @@
   icon: assets/Dodger.png
   description: Highly addictive missile dodging game where the player tries to perform hard maneuvers in order to make the enemy die by his own hand.
   achievements:
-    - text: First exposure to REST API for implmenting leaderboards
+    - text: First exposure to REST API for implementing leaderboards
   wUrl: https://www.microsoft.com/en-us/store/apps/dodger/9nblggh0gpz1
 
 - name: Fifty Five
