@@ -4,9 +4,13 @@
   description: Understand what you eat 🍏 🍩 🍣 🌰 🧀
   aUrl: https://apps.apple.com/us/app/foodology/id1506837160
   pUrl: https://play.google.com/store/apps/details?id=com.BaracatBros.Foodology
+  achievements:
+    - text: Featured on Product Hunt
   media:
     - title: Website
       url: https://www.baracatbros.com/games/foodology/
+    - title: Product Hunt
+      url: https://www.producthunt.com/posts/foodology/
 
 - name: Bubblo World Preschool
   year: 2019 -
