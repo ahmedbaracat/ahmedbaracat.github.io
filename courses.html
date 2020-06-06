@@ -8,6 +8,56 @@ layout: null
 </head>
 <body>
     {% include header.html %}
+
+    <section class="home">
+        <h2>
+            Courses
+        </h2>
+        <ul class="highlights">
+            <li>
+                <a href="#intro-datasience-arabic-p1">Baracat's Introduction to Data Science in Arabic Part 1</a>
+            </li>
+            <li>
+                <a href="#intro-datasience-arabic-p2">Baracat's Introduction to Data Science in Arabic Part 2</a>
+            </li>
+        </ul>
+
+        <iframe src="https://player.vimeo.com/video/388446129" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+        <h2 id="intro-datasience-arabic-p1">Baracat's Introduction to Data Science in Arabic Part 1</h2>
+        <p>In Part 1, You are going to learn:</p>
+        <ul class="highlights">
+            <li>
+                Best practices to setting up your Conda and Python Environments
+            </li>
+            <li>
+                How to install data science packages such as Jupyter Notebooks and Pandas
+            </li>
+            <li>
+                How to use Pandas DataFrames to extraxt useful insights from csv files
+            </li>
+        </ul>
+
+        <p><a href="https://skl.sh/3dbYuW1">Access Part 1 and get 2 months of SkillShare Premium for free</a></p>
+        <p><a href="https://skl.sh/3etxhhH">Only Access Part 1 for free</a></p>
+
+        <h2 id="intro-datasience-arabic-p2">Baracat's Introduction to Data Science in Arabic Part 2</h2>
+        <p>In Part 2, You are going to learn:</p>
+        <ul class="highlights">
+            <li>
+                How to clean the data using advanced filtering techniques
+            </li>
+            <li>
+                How to analyze textual data using simple Natural Language Processing (NLP) techniques
+            </li>
+            <li>
+                How to analyze images of apps icons to extract dominant colors and cluster them
+            </li>
+        </ul>
+
+        {% include email_signup_form.html %}
+    </section>
+
     {% include footer.html %}
 </body>
 </html>
