@@ -266,9 +266,17 @@ a.twitter-username:before {
     text-align: center;
 }
 
-.introduction-video {
+.video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 56.25%;
+    height: 100%;
 }
 
 @font-face {
