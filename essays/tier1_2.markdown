@@ -1,0 +1,15 @@
+---
+layout: essay
+title:  "My experience switching from Tier 2 to Tier 1 TechNation UK Visa in 2020"
+date:   2020-06-17
+permalink: /essays/my-experience-switching-from-tier-2-to-tier-1-tech-nation-exceptional-talent-uk-visa-in-2020
+---
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+* hi
+* lol
+
+## hello
+### hiiii
+lol
