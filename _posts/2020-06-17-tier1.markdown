@@ -1,15 +1,77 @@
 ---
 layout: essay
-title:  My experience switching from Tier 2 to Tier 1 Tech Nation UK Visa in 2020
+title:  My experience switching from Tier 2 to Tier 1 Tech Nation UK visa in 2020
 date:   2020-06-17
 permalink: /essays/my-experience-switching-from-tier-2-to-tier-1-tech-nation-exceptional-talent-uk-visa-in-2020
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+## My experience switching from Tier 2 to Tier 1 Tech Nation UK visa in 2020
+Let’s get the logistics out of the way:
+* This is not an official guide, for official guidance check [gov.uk](https://www.gov.uk/global-talent) and [Tech Nation guide](https://technation.io/visa-tech-nation-visa-guide/)
+* This is just my personal experience so take it with a grain of salt
+* Exceptional Talent (Tier 1) visa got renamed to Global Talent visa in Feb. 2020, but they are essentially the same visa. I personally like the Exceptional Talent naming as it feels more prestigious 😇
 
-* hi
-* lol
+Background
+You can safely skip this section if you are here for the meat 🍖
 
-## hello
-### hiiii
-lol
+In Jan 2019, a year before I actually applied to the visa, I took a step back to think about where I want to live and what I want to do moving forward. At that point in time, I have been in the UK for 1.5 years. I have just moved to London a few months earlier to work for Amazon Alexa as a software engineer whereas previously I was working for Amazon Dynamic Advertising in Edinburgh, Scotland.
+
+Back then I reached the conclusion that I want to work independently to answer a few questions in my mind, gain more freedom, which I really missed by working as employee and just to explore. Equally important, I needed to maximize my ability to travel back and forth between wherever I am living and Cairo to see my family. The issue was that being on a Tier 2 as well as working for Amazon constrain me from registering a business or working as self-employed or travel as I please.
+
+I started exploring the potential of moving to different countries and cities that would allow me to work independently, but that’s not the topic of this essay. Eventually, I reached the conclusion that the UK and London was probably the best country/city, which fit my personal living preferences (warm weather, travel time to Cairo, opportunities, liveliness, among other criteria) as well as the ability to work independently if I switch to another visa.
+
+In the beginning, I quickly discarded the Tier 1 Exceptional visa because the official requirements on the UK gov. website made me realize that I needed to be, ahem, “exceptional”, which I didn’t think I am at the time (or now to be honest 😅). Unique, yes, but exceptional, I don’t think so. This left me with only one option, which was the Startup visa. In order to get that visa, you need to be endorsed and although I tried contacting a couple of the endorsement bodies, they either didn’t reply back, haven’t started accepting applications (since it was a new visa at that time), and so on and so forth.
+
+Since I couldn’t progress on the Startup visa, I started digging again and try to understand if I can by any chance fit the Tier 1 Exceptional visa requirements. My viewpoint shifted from “I can’t apply to this visa” to “I can potentially get endorsed” happended when I was reading the Tech Nation very detailed guide on how to apply. In there, they listed the kind of example evidences that I can present in my application. Going through these, I realized I can present many of these evidences.
+
+Imposter Syndrom
+
+The most important idea I want to leave you with is don’t assume that you can’t apply, validate it (i.e. read the requirements, talk to other people who applied, look at previous applications, etc.), which I believe is an important lesson in life in general. As I said, if you have a quick look at the UK gov. website, you can easily reach the conclusion that the Tier 1 visa is not for you, but if you start digging a little deeper, you may realize that you can do it.
+
+>>>>> QUOTE <<<<<
+Don’t assume, validate
+
+Benefits of Switching
+
+To me, the main benefits of switching from tier 2 General visa to tier 1 Exceptional Talent visa are:
+* Not needing sponsorship, which makes it easier to switch companies
+* freedom to apply to companies and startups that don’t offer sponsorship
+* freedom to start your own businesses in the UK or be self-employed
+* freedom to leave your company, stay in the UK or travel outside and be able to come back
+
+The Process
+1. Application preparation
+    1. Gather evidences: If you are a software engineer, these might include open source contributions, side-projects, invitations to speak at Conferences, articles written, etc.
+    2. Write your personal statement
+    3. Ask for reference letters
+2. Stage 1: you are essentially uploading your prepared application to a portal (to be assessed by Tech Nation if you are applying within the digital technology field)
+3. Stage 2: you are applying for the visa and filling immigration related questions such as criminal convictions, being deported from countries, etc. As well as choosing a biometric appointment
+4. Biometric appointment
+5. Receive your new Biometric Residence Permit (BRP)
+
+The Timeline
+Even though, your timeline may vary, I wanted to share mine to give you an idea of how it might look like:
+* Few days of side-work to prepare the application
+* 28th Dec 2019: Apply to stage 1
+* 20th Jan 2020: Receive Tech Nation endorsement
+* 23rd Jan 2020: Apply to stage 2 + Visa Appointment
+* 29th Jan 2020: Stage 2 successful
+* 31st Jan 2020: Receive BRP
+
+Fees
+* £456: Stage 1 (if you don’t get endorsed you only lose this unless you applied to both stages together)
+* £1200: Health Surcharge (I applied for 3 years 3 x £400)
+* £171: Stage 2
+* £112: Visa Appointment
+
+If you think £2K is a lot to switch visa, let me just remind you that you are essentially buying >>>>link to #benefits of switching<<<<<, which to me justifies the investment.
+
+Tips
+* If you decide to apply, don’t wait, requirements may change and may get harder. For example, when I was reading the guidelines back in June 2019, I only needed 2 reference letters to apply. When I was applying in Dec. 2020, I got surprised that they increased it to 3 😅.
+* When asking for reference letters, make sure you make it so easy for referee to write it
+    * Remind them of what you did and what they should write about
+    * Provide them with a template that they can easily fill
+* If you don’t have the referee resume, link to their LinkedIn on the reference letter instead. For example, one of my referee, being a professor, got very busy and it was hard to get them to reply to my emails. 
+
+Application Example
+If you have checked the >>>official guidance on the UK website<<<< as well as >>>>>the Tech Nation guide<<<< and you think you might benefit from looking at how a complete application might look like, check my application example. <<<<LINK>>>>>
