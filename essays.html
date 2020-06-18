@@ -10,13 +10,9 @@ layout: null
 {% include header.html %}
 <section class="home">
     <h2>Essays</h2>
-    <ul>
         {% for post in site.posts %}
-        <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
         {% endfor %}
-    </ul>
 </section>
 {% include footer.html %}
 </body>
